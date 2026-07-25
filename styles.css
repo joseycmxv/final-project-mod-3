@@ -338,6 +338,9 @@ QUALITY WORK
      justify-content: space-between;
      align-items: center;
      padding: 0 20px;
+     margin: 0 auto;
+     max-width: 1500px;
+     width: 100%;
 }
 
 .section__tag {
@@ -358,11 +361,10 @@ QUALITY WORK
 
 .section__para {
      margin: 32px 0;
-     line-height: 1.5;
+     line-height: 1.625;
      font-size: 18px;
      font-weight: 500;
      color: #7c8ba1;
-     max-width: 450px;
 }
 
 .quality__btn {
