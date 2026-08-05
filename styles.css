@@ -343,12 +343,13 @@ QUALITY WORK
      width: 100%;
 }
 
-.section__tag {
+#quality .section__tag {
      color: #6415ff;
      font-size: 16px;
      letter-spacing: 1.6px;
      font-weight: 700;
      text-transform: uppercase;
+     text-align: left;
 }
 
 .section__title {
@@ -715,6 +716,7 @@ PRICING
      color: rgb(26 32 44);
      box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
+
 
 .plan__banner-one {
      position:absolute;
@@ -1108,27 +1110,6 @@ GET STARTED
      padding: 96px 0px;
 }
 
-.start__blob--5 {
-     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: 20rem;
-    width: 20rem;
-    transform: translate(-5rem, 8rem);
-    color: rgb(80, 17, 204);
-    opacity: 0.5;
-}
-
-.start__blob--6 {
-     position: absolute;
-    top: 0px;
-    right: 0px;
-    height: 20rem;
-    width: 20rem;
-    transform: translate(5rem, -16rem);
-    color: rgb(80, 17, 204);
-    opacity: 0.5;
-}
 
 .start__container {
      width: 100%;
