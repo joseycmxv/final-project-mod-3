@@ -707,21 +707,22 @@ PRICING
      flex-direction: column;
      border-radius: 0.5rem;
      background-color: rgb(255,255,255);
-     padding-left: 2px;
-     padding-right: 2px;
-     margin-right: 2px;
-     padding-top: 0.5px;
+     padding-left: 2rem;
+     padding-right: 2rem;
+     margin-right: 2rem;
+     padding-top: 0.5rem;
      text-align: center;
      color: rgb(26 32 44);
      box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-.plan_banner {
+.plan__banner-one {
      position:absolute;
      left: 0px;
      right: 0px;
-     top: 0px;
+     height: 0.5rem;
      background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+     border-radius: 500px;
 
 }
 
@@ -821,6 +822,16 @@ BUSINESS CARD
 
 */
 
+.plan__banner-two {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
 .plan:nth-child(2) {
      background: linear-gradient(62deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
 }
@@ -888,6 +899,17 @@ BUSINESS CARD
 ENTERPRISE
 
 */
+
+.plan__banner--three {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    position: absolute;
+   background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
 
 .plan__button--three {
      color: #f7fafc;
