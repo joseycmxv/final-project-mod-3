@@ -614,3 +614,47 @@ VALUE
 .values__img {
      width: 50%;
 }
+
+/*
+
+PRICING
+
+*/
+
+.section {
+     padding: 0 32px;
+}
+
+.section__tag {
+     text-align: center;
+     font-size: 16px;
+     color: #6415ff;
+     letter-spacing: 1.6px;
+     font-weight: 700;
+     text-transform: uppercase;
+}
+
+.section__title--pricing {
+     text-align: center;
+     margin: 16px 0;
+     font-size: 48px;
+     font-weight: 900;
+     color: rgb(36, 62 , 99);
+     line-height: 1.5;
+}
+
+.section__para--pricing {
+     text-align: center;
+     font-size: 18px;
+     font-weight: 500;
+     color: #7c8ba1;
+     line-height: 1.625;
+}
+
+.plans {
+     display: flex;
+     position: relative;
+     flex-direction: row;
+     width: 100%;
+     justify-content: space-between;
+}
