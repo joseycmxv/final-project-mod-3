@@ -686,11 +686,11 @@ PRICING
      font-weight: 500;
      color: #7c8ba1;
      line-height: 1.625;
+     
 }
 
 .plans {
      display: flex;
-     flex-wrap: wrap;
      position: relative;
      flex-direction: row;
      width: 100%;
@@ -930,4 +930,166 @@ ENTERPRISE
 .plan__button--three:hover {
      cursor: pointer;
      
+}
+
+.plans__blob { 
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1);
+    height: 256px;
+    width: 256px;
+    opacity: 0.25;
+    z-index: -10;
+}
+
+/*
+
+testimonials
+
+*/
+
+#testimonials .section__tag {
+     text-align: left;
+     font-size: 16px;
+     color: rgb(100, 21, 255);
+     letter-spacing: 1.6px;
+     font-weight: 700;
+     text-transform: uppercase;
+}
+
+#section {
+     padding: 0 32px;
+}
+
+#testimonials .section__para {
+     margin: auto;
+}
+
+
+#testimonials .container {
+     padding-top: 6rem;
+     padding-bottom: 6rem;
+     padding: 96px 0px;
+}
+
+#testimonials .row {
+     margin-left: auto;
+     margin-right: auto;
+     max-width: 1280px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.testimonials__img {
+     width: 50%;
+}
+
+.testimonials__description {
+     display: flex;
+     flex-direction: column;
+     padding-left: 64px;
+     width: 50%;
+}
+
+#testimonials .section__title {
+     margin-bottom: 24px;
+     line-height: 1.25;
+}
+
+.testimonial {
+     margin-top: 40px;
+}
+
+.testimonial__rating {
+     margin-right: 2px;
+     margin-top: 4px;
+}
+
+.testimonial__title {
+     color: rgb(74 85 104);
+     line-height: 1.625;
+     margin-top: 1rem;
+     font-size: 1.25rem;
+     font-weight: 700;
+}
+
+.testimonial__para {
+     margin-top: 1rem;
+     margin-bottom: 2rem;
+     font-weight: 500;
+     line-height: 1.625;
+     font-size: 16px;
+     color: rbg(74 85 104);
+}
+
+.testimonial__bottom {
+     display: flex;
+     justify-content: space-between;
+}
+
+.testimonial__profile {
+     display: flex;
+     align-items: center;
+}
+
+.testimonial__img {
+     width:  80px;
+     height: 80px;
+     border-radius: 50%;
+}
+
+.testimonial__details {
+     margin-left: 24px;
+}
+
+.testimonial__name {
+     color: rgb(74 85 104);
+     line-height: 1.625;
+     font-size: 1.25rem;
+     font-weight: 700;
+}
+
+.testimonial__about {
+     color: rgb(124 139 161);
+     font-weight: 500;
+     line-height: 1.5;
+}
+
+.testimonial__buttons {
+     display: flex;
+     align-items: center;
+}
+
+.testimonial__button {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+   background: rgb(237, 242, 247);
+    border-radius: 50%;
+    margin: 0px 12px;
+    transition: all 300ms ease;
+    border: none;
+    cursor: pointer;
+
+}
+
+.testimonial__button:hover{
+     background-color: rgb(229 231 235);
+}
+
+.testimonial__button svg {
+     width: 16px;
+     height: 16px;
+}
+
+.divider {
+     margin-top: 0.75rem;
+     margin-bottom: 0.75rem;
+     border-right-width: 1px;
+     width: 0.5px;
+     background-color: rgb(237 242 247);
+     height: 20px;
 }
