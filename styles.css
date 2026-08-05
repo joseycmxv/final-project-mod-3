@@ -538,7 +538,7 @@ VALUE
      padding: 32px 64px 32px 0;
 }
 
-.section__tag {
+.section__tag--value {
      font-size: 16px;
      color: #6415ff;
      letter-spacing: 1.6px;
@@ -615,11 +615,48 @@ VALUE
      width: 50%;
 }
 
+.value__title {
+    display: flex;
+    align-items: center;
+}
+
+.values__list {
+    display: flex;
+    gap: 32px;
+}
+
+.value {
+    width: 50%;
+}
+
+.btn__value {
+     margin-top: 48px;
+     background-color: #6415ff;
+     padding: 12px 32px;
+     border: none;
+     border-radius: 500px;
+     font-size: 14px;
+     color: #fff;
+     font-weight: bold;
+     transition: all 300ms ease;
+     cursor: pointer;
+}
+
+.btn__value:hover {
+     background-color:  rgb(80, 17, 204);
+}
+
 /*
 
 PRICING
 
 */
+
+#price .row {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
 
 .section {
      padding: 0 32px;
@@ -653,8 +690,222 @@ PRICING
 
 .plans {
      display: flex;
+     flex-wrap: wrap;
      position: relative;
      flex-direction: row;
      width: 100%;
      justify-content: space-between;
+}
+.plan {
+     width: calc(100%/3);
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     margin-top: 4rem;
+     width: 100%;
+     max-width: 24rem;
+     flex-direction: column;
+     border-radius: 0.5rem;
+     background-color: rgb(255,255,255);
+     padding-left: 2px;
+     padding-right: 2px;
+     margin-right: 2px;
+     padding-top: 0.5px;
+     text-align: center;
+     color: rgb(26 32 44);
+     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.plan_banner {
+     position:absolute;
+     left: 0px;
+     right: 0px;
+     top: 0px;
+     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+
+}
+
+.plan__top {
+     display: flex;
+     flex-direction: column;
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+     text-transform: uppercase;
+     line-height: 1.625;
+}
+
+.plan__name {
+     font-size: 20px;
+     font-weight: bold;
+     line-height: 1.625;
+}
+
+.plan__price {
+     font-size: 48px;
+     margin: 4px 0;
+     font-weight: bold;
+     line-height: 1.625;
+}
+
+.plan__duration {
+     font-size: 16px;
+     color: #a0aec0;
+     font-weight: bold;
+     letter-spacing: 0.1px;
+     line-height: 1.625;
+}
+
+.plan__middle {
+     margin-left: -2rem;
+     margin-right: -2rem;
+     display: flex;
+     flex: 1 1 0%;
+     flex-direction: column;
+     padding: 2rem;
+}
+
+.audience {
+     font-size: 20px;
+     font-weight: 700;
+     line-height: 1.5;
+}
+
+.plan__feature {
+     margin-top: 20px;
+     font-weight: 500;
+     color: #718096;
+     font-size: 16px;
+     line-height: 1.5;
+}
+
+.plan__bottom {
+     padding-left: 4rem;
+     padding: 4rem;
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+}
+
+.plan__button--one {
+     border-radius: 9999px;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+     width: 100%;
+     font-weight: 700;
+     transition: all 300ms ease;
+     text-transform: uppercase;
+     letter-spacing: 0.05rem;
+     background-color: rgb(56 178 172);
+     color: #f7fafc;
+     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+     border: none;
+}
+
+.plan__button--one:hover {
+     cursor: pointer;
+
+}
+
+.plan:nth-child(1) .plan__middle, .plan:nth-child(3) .plan__middle {
+     border-top: 2px solid rgb(229, 231, 235);
+    border-bottom: 2px solid rgb(229, 231, 235);
+}
+
+.plan:nth-child(2) .plan__middle {
+     border-top: 2px solid rgb(102, 126, 234);
+    border-bottom: 2px solid rgb(102, 126, 234);
+}
+
+/*
+
+BUSINESS CARD
+
+*/
+
+.plan:nth-child(2) {
+     background: linear-gradient(62deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.plan__name--bns {
+     font-size: 20px;
+     font-weight: bold;
+     line-height: 1.625;
+     color: #f7fafc;
+}
+
+.plan__price-bns {
+     color: #f7fafc;
+     font-size: 48px;
+     margin: 4px 0;
+     font-weight: bold;
+     line-height: 1.625;
+}
+
+.plan__duration--bns {
+     color: #f7fafc;
+     font-size: 16px;
+     letter-spacing: 0.1em;
+     font-weight: bold;
+     line-height: 1.625;
+}
+
+.audience--bns {
+     color: #f7fafc;
+     font-size: 20px;
+     font-weight: 700;
+     line-height: 1.5;
+     letter-spacing: 0.025em;
+}
+
+.plan__feature--bns {
+     color: #f7fafc;
+     margin-top: 20px;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.5;
+}
+
+.plan__button--two {
+     color: #6415ff;
+     background-color: #f7fafc;
+     padding: 0.75rem 2rem;
+     font-weight: 700;
+     transition: all 300ms ease;
+     width: 100%;
+     border-radius: 9999px;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+     text-transform: uppercase;
+     border: none;
+}
+
+.plan__button--two:hover {
+     cursor: pointer;
+     
+}
+
+/*
+
+ENTERPRISE
+
+*/
+
+.plan__button--three {
+     color: #f7fafc;
+     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+     padding: 0.75rem 2rem;
+     font-weight: 700;
+     transition: all 300ms ease;
+     width: 100%;
+     border-radius: 9999px;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+     font-size: 0.875rem;
+     text-transform: uppercase;
+     letter-spacing: 0.05em;
+     border: none;
+}
+
+.plan__button--three:hover {
+     cursor: pointer;
+     
 }
